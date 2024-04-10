@@ -1,0 +1,58 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+	<meta charset="utf-8" />
+	<link rel="icon" href="%sveltekit.assets%/favicon.png" />
+	<meta name="viewport" content="width=device-width, initial-scale=1" />
+	%sveltekit.head%
+</head>
+
+<body data-sveltekit-preload-data="hover">
+	<div style="display: contents">%sveltekit.body%</div>
+</body>
+
+</html>
+
+<style>
+	:root {
+		font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+		line-height: 1.5;
+		font-weight: 400;
+		color-scheme: light dark;
+		color: var(--text);
+		background-color: var(--background);
+		font-synthesis: none;
+		text-rendering: optimizeLegibility;
+		-webkit-font-smoothing: antialiased;
+		-moz-osx-font-smoothing: grayscale;
+	}
+
+	@media (prefers-color-scheme: light) {
+		:root {
+			--background: white;
+			--text: black;
+		}
+	}
+
+	@media (prefers-color-scheme: dark) {
+		:root {
+			--background: #1f1f1f;
+			--text: white;
+
+		}
+	}
+
+	body {
+		height: 100dvh;
+		width: 100%;
+
+		margin: 0;
+		display: flex;
+		place-content: center;
+	}
+
+	* {
+		box-sizing: border-box;
+	}
+</style>
