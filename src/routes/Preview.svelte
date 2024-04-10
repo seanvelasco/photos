@@ -21,5 +21,6 @@
 		min-width: 28rem;
 		max-height: 37.5rem;
 		object-fit: cover;
+		user-select: none;
 	}
 </style>
