@@ -36,13 +36,13 @@
 	<meta name="description" content={title} />
 	<meta property="og:title" content={title} />
 	<meta property="og:description" content={description} />
-	<meta property="og:image" content={data.images[0].image} />
+	<meta property="og:image" content={data.images[0].url} />
 </svelte:head>
 
 <div>
-	{#each data.images as { id, title, image }}
+	{#each data.images as { id, title, url }}
 		<a on:click={preview} href={id}>
-			<img src={image} alt={title} loading="lazy" />
+			<img src={url} alt={title} loading="lazy" />
 		</a>
 	{/each}
 </div>

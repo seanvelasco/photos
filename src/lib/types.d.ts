@@ -1,6 +1,6 @@
 export type Image = {
     id: string
-    image: string
+    url: string
     title?: string
     description?: string
     meta?: unknown

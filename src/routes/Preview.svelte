@@ -4,7 +4,7 @@
 </script>
 
 <div>
-	<img src={image.image} alt={image.title} />
+	<img src={image.url} alt={image.title} />
 </div>
 
 <style>
