@@ -6,7 +6,5 @@ export const load = async () => {
 
     const images = await response.json() as Image[]
 
-    return {
-        images
-    }
+    return { images }
 }

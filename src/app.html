@@ -38,18 +38,25 @@
 	@media (prefers-color-scheme: dark) {
 		:root {
 			--background: #1f1f1f;
-			--text: white;
+			--text: rgb(214, 214, 214);
 
 		}
 	}
 
-	body {
-		height: 100dvh;
+	html {
+		height: 100%;
 		width: 100%;
+	}
 
+	body {
+		height: 100%;
+		width: 100%;
 		margin: 0;
 		display: flex;
+		flex-direction: column;
+		align-items: center;
 		place-content: center;
+		overflow: scroll;
 	}
 
 	* {

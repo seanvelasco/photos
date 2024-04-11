@@ -12,21 +12,30 @@
 
 <!-- svelte-ignore a11y-click-events-have-key-events a11y-no-noninteractive-element-interactions -->
 <dialog bind:this={dialog} on:close on:click|self={() => dialog.close()}>
-	<!-- svelte-ignore a11y-no-static-element-interactions -->
-	<div on:click|stopPropagation>
+	<div on:click|stopPropagation role="dialog">
 		<slot />
-		<!-- svelte-ignore a11y-autofocus -->
 		<!-- <button autofocus on:click={() => dialog.close()}>close modal</button> -->
 	</div>
 </dialog>
 
 <style>
+	div {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		width: 100%;
+		height: 100%;
+		background-color: inherit;
+		overflow: scroll;
+	}
 	dialog {
-		max-width: 32em;
+		overflow: hidden;
 		border-radius: 0.2em;
 		border: none;
 		padding: 0;
+		background: transparent;
 	}
+
 	dialog::backdrop {
 		background: rgba(0, 0, 0, 0.3);
 	}

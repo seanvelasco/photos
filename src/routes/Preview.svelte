@@ -9,18 +9,19 @@
 
 <style>
 	div {
-		display: flex;
+		display: block;
+		width: 100%;
+		height: auto;
 		align-items: center;
 		justify-content: center;
-		width: 100%;
-		height: 100%;
 		background-color: inherit;
 	}
 	img {
-		width: auto;
-		min-width: 28rem;
+		object-fit: contain;
+		display: block;
+		width: 100%;
+		height: 100%;
 		max-height: 37.5rem;
-		object-fit: cover;
 		user-select: none;
 	}
 </style>
