@@ -27,7 +27,7 @@
 		}
 	}
 
-	const title = 'Gallery | gallery.sean.app'
+	const title = 'Gallery - gallery.sean.app'
 	const description = 'Personal photo gallery'
 </script>
 

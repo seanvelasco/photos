@@ -5,13 +5,16 @@
 	export let data: { image: Image }
 
 	$: ({ image } = data)
+
+	const title = `${image.title} - gallery.sean.app`
+	const description = image.title
 </script>
 
 <svelte:head>
-	<title>{image.title}</title>
-	<meta name="description" content={image.title} />
-	<meta property="og:title" content={image.title} />
-	<meta property="og:description" content={image.title} />
+	<title>{title}</title>
+	<meta name="description" content={description} />
+	<meta property="og:title" content={title} />
+	<meta property="og:description" content={description} />
 	<meta property="og:image" content={image.url} />
 </svelte:head>
 
