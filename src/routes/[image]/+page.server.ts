@@ -5,6 +5,7 @@ export const load = ({ params }): { image: Image } => {
 
     return {
         image: {
+            title: '',
             id: image,
             url: `https://api.img.sean.app/${image}`
         }
